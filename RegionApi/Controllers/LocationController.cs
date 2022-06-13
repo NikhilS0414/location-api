@@ -2,9 +2,6 @@
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Region.Data.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -22,6 +19,7 @@ namespace RegionApi.Controllers
             _logger = logger;
         }
 
+        // Get postal details
         [HttpGet]
         public async Task<LocationDetails> GetAsync(string postalCode)
         {
