@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Swashbuckle.AspNetCore.Swagger;
+using Region.Service;
 
 namespace RegionApi
 {
@@ -37,6 +38,9 @@ namespace RegionApi
                     Version = "v1"
                 });
             });
+
+            services.AddSingleton<IAutoFillService, AutoFillService>();
+            services.AddSingleton<ILocationService, LocationService>();
 
         }
 

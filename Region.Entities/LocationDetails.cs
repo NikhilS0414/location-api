@@ -1,9 +1,6 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Region.Data.Model
+namespace Region.Entities
 {
     public class LocationDetails
     {
