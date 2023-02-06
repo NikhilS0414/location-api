@@ -15,5 +15,9 @@
     <ProjectReference Include="..\Region.Service\Region.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="RegionBuild\" />
+  </ItemGroup>
+
 
 </Project>
