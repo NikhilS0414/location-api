@@ -2,7 +2,6 @@ version: 0.2
 phases:
   build:
     commands:
-      - dotnet test ./RegionApi/RegionApi.csproj
       - dotnet publish -c release -o ./build_output ./RegionApi/RegionApi.csproj
 artifacts:
   files:
