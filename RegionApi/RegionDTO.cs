@@ -7,6 +7,5 @@
         public string Admin_District { get; set; }
         public string Parliamentary_Constituency { get; set; }
         public float Area { get; set; }
-
     }
 }
