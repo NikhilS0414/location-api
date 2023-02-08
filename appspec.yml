@@ -4,6 +4,9 @@ files:
   - source: \
     destination: \home\ec2-user
 hooks:
+  BeforeInstall:
+    - location: \before-install.bat     
+       timeout: 900
   ApplicationStart:
     - location: \installApp.sh
       timeout: 300
