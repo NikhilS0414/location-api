@@ -2,10 +2,10 @@ version: 0.2
 phases:
   build:
     commands:
-      - dotnet publish -c release -o RegionApi/RegionBuild/build_output ./RegionApi/RegionApi.csproj
+      - dotnet publish -c release -o ./build_output ./RegionApi/RegionApi.csproj
 artifacts:
   files:
-    - CodeBuild-RegionApi/RegionBuild/build_output/**/*
+    - RegionApi/RegionBuild/build_output/**/*
     - appspec.yml
     - before-install.bat
     - installApp.sh
