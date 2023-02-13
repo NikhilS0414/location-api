@@ -7,6 +7,3 @@ hooks:
   BeforeInstall:
     - location: .\before-install.bat
       timeout: 900
-  ApplicationStart:
-    - location: .\installApp.sh
-      timeout: 300
