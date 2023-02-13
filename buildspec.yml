@@ -3,10 +3,10 @@ phases:
   pre_build:
     commands:
       - echo Restore started on `date`
-      - dotnet restore RegionApi/RegionApi.csproj
+      - dotnet restore ./RegionApi/RegionApi.csproj
   build:
     commands:
-      - dotnet publish -c release -o ./build_output RegionApi/RegionApi.csproj
+      - dotnet publish -c release -o ./build_output ./RegionApi/RegionApi.csproj
   artifacts:
     files:
       - RegionApi/RegionBuild/build_output/**/*
