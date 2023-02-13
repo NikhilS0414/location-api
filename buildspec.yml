@@ -1,11 +1,16 @@
 version: 0.2
 phases:
+  pre_build:
+    commands:
+      - echo Restore started on `date`
+      - dotnet restore RegionApi/RegionApi.csproj
   build:
     commands:
-      - dotnet publish -c release -o ./build_output ./RegionApi/RegionApi.csproj
-artifacts:
-  files:
-    - RegionApi/RegionBuild/build_output/**/*
-    - appspec.yml
-    - before-install.bat
-    - installApp.sh
+      - dotnet publish -c release -o ./build_output RegionApi/RegionApi.csproj
+  artifacts:
+    files:
+      - RegionApi/RegionBuild/build_output/**/*
+      - appspec.yml
+      - before-install.bat
+      - installApp.sh
+      
